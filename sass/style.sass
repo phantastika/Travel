@@ -1,0 +1,401 @@
+@import ./fonts
+@import ./reset
+@import ./var
+
+.logo
+    text-transform: uppercase
+
+.header__backgroung
+    background-color: #E3D5B8
+    width: 100%
+    position: fixed
+    z-index: 5
+
+.heder__container
+    @include container
+
+.header__menu-wrap
+    @include flex
+    padding-top: 12px
+.menu-items
+    @include flex
+
+.header__logo
+    @include logo-header
+
+.menu-item
+    padding: 8px 12px
+    margin-left: 31px
+    cursor: pointer
+
+.menu-item:hover
+    background-color: #D03958
+    border-radius: 3px
+    transition-timing-function: linear
+    transition-duration: 0.5s
+    cursor: pointer
+
+.menu-item-txt
+    text-transform: uppercase
+    color: $txt-black
+    text-align: center
+
+.container__bgc
+    @include bgc-beige
+
+.container__main
+    @include container
+    padding-top: 182px
+    display: flex
+    flex-wrap: wrap
+    align-items: space-between
+    justify-content: space-between
+
+.avatar
+    border-radius: 53px
+    width: 105px
+    margin:
+
+.main-left
+    max-width: 49%
+
+.main__title
+    font-family: 'Montserrat', serif
+    text-transform: uppercase
+    font-size: 90px
+    line-height: 109px
+    &.purple
+        color: $txt-purple
+
+.main_txt
+    font-family: 'PT Serif', serif
+    font-size: 20px
+    line-height: 26px
+    color: $txt-black
+    max-width: 97%
+    margin-top: 21px
+    margin-bottom: 127px
+
+.main-right
+    position: relative
+
+.form-container
+    min-width: 354px
+    min-height: 468px
+    background-color: #D03958
+    padding: 26px 23px
+    position: absolute
+    right: 18px
+    top: 19px
+
+.form-action
+    display: flex
+    flex-direction: column
+
+.form-title
+    color: white
+    font-size: 22px
+    text-align: center
+    text-transform: uppercase
+    font-family: 'Montserrat'
+    padding-bottom: 35px
+
+.input
+    width: 100%
+    padding: 18px 15px
+    border: 1px solid #FFFFFF
+    border-radius: 2px
+    box-sizing: border-box
+    margin-bottom: 18px
+    resize: vertical
+    outline: none
+    border: none
+
+.input::placeholder
+    font-size: 20px
+
+.input-check-box
+    transform: scale(1.8)
+    margin-right: 23px
+    border: 1px #D03958
+
+.input-check-box__text
+    font-family: 'PT Serif', serif
+    font-size: 20px
+    line-height: 26px
+    color: $txt-white
+
+.check-box
+    margin-bottom: 26px
+    margin-top: 16px
+
+.input-button
+    background-color: $txt-black
+    border: none
+    padding: 13px 130px
+    color: $txt-white
+    text-transform: uppercase
+    font-family: 'Montserrat', serif
+    font-size: 22px
+    cursor: pointer
+
+.container__bgs
+    &--white
+        background-color: white
+
+.container__main
+    &--white
+        @include container
+
+.second__title
+    font-family: 'Roboto', sans-serif
+    width: 400px
+    font-size: 50px
+    text-transform: uppercase
+    padding-top: 31px
+    &--purple
+        color: $txt-purple
+    &--black
+        color: $txt-black
+
+.cervices-items
+    padding-top: 88px
+    padding-bottom: 66px
+    @include flex
+
+.cervices-item
+    max-width: 176px
+    min-width: 140px
+    width: 20%
+    text-align: center
+
+.container__bgs
+    &--purple
+        background-color: #D03958
+
+.container__main
+    &--purple
+        @include container
+        @include flex
+
+.container-purple
+    color: $txt-white
+    max-width: 629px
+    width: 100%
+    margin-bottom: 40px
+    margin-top: 29px
+
+.input-button
+    &.beige
+        @include bgc-beige
+        padding: 0
+        color: $txt-black
+        border-radius: 4px
+        padding: 18px 62px
+
+.container__bgs
+    &--price
+        @include bgs-beige
+
+.container__main
+    &--price
+        @include container
+
+.third__title
+    &--black
+        @include third-title
+        padding-top: 50px
+        padding-bottom: 47px
+
+.section-price
+    @include flex
+
+.price
+    width: 32%
+    background-color: #ffffff
+    text-align: center
+    height: 389px
+
+.text__price
+    font-family: 'PT Serif', serif
+    font-size: 22px
+    padding-top: 31px
+
+.third__title
+    &--purple
+        color: $txt-purple
+        font-size: 60px
+        padding-top: 14px
+        padding-bottom: 14px
+        text-transform: uppercase
+
+.button-price
+    &__beige
+        border-radius: 4px
+        margin: 0 auto
+        padding-top: 72px
+    &__purple
+        border-radius: 4px
+        margin: 0 auto
+        padding-top: 72px
+
+.description
+    display: block
+    width: 180px
+    margin: 0 auto
+    height: 135px
+
+.button-price--txt
+    @include montserrat
+    color: $txt-black
+    text-transform: uppercase
+
+.tag
+    position: relative
+
+.price-tag::before
+    border-top: 103px solid #959595
+    border-right: 107px solid transparent
+    content: ''
+    position: absolute
+    left: 0px
+    top: -1px
+
+.price-tag::after
+    content: 'popular'
+    text-transform:
+    position: absolute
+    left: 5px
+    top: 20px
+    font-size: 16px
+    text-transform: capitalize
+    transform: rotate(317deg)
+
+.sign
+    padding: 11px 58px
+    @include bgc-beige
+    border-radius: 3px
+
+.sign_purple
+    padding: 11px 58px
+    background-color: #D03958
+    border-radius: 3px
+    color: $txt-white
+
+.try
+    padding: 11px 84px
+    @include bgc-beige
+    border-radius: 3px
+
+.testimonial
+    width: 50%
+
+.testimonial-flex
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.testimonial__left
+    display: flex
+    flex-direction: column
+
+.text__client
+    width: 356px
+    font-size: 20px
+
+.third-title__testimonial
+    padding-top: 134px
+    padding-bottom: 45px
+    @include third-title
+
+.testimonial-purple
+    color: $txt-purple
+
+.section-testimonial
+    width: 50%
+.client
+    display: flex
+    flex-wrap: wrap
+    width: 475px
+    height: 132px
+    justify-content: space-between
+.dj
+    position: absolute
+    right: 15px
+    top: 6px
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+
+.gallery
+    display: flex
+    flex-wrap: wrap
+    width: 400px
+    justify-content: space-between
+    align-items: center
+    margin: 0 auto
+
+.avatar-gallery
+    margin-bottom: 25px
+
+.text__client
+    margin-bottom: 18px
+    line-height: 26px
+.name
+    color: $txt-purple
+.first
+    margin-bottom: 64px
+
+.top
+    margin-bottom: 64px
+    padding-left: 24px
+    position: relative
+
+.right-item
+    padding-right: 20px
+    margin-right: 20px
+    border-right: 1px solid $txt-white
+    &:last-child
+        border-right: none
+.purple
+    color: $txt-purple
+.text-child
+    position: relative
+    margin-bottom: 119px
+.child
+    position: absolute
+    right: -14px
+    top: 16px
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+
+.text-background
+    padding: 20px 57px 27px 22px
+    background: #E3D5B8
+    border-radius: 4px
+.link
+    text-align: center
+    text-decoration: underline
+    font-family: montserrat
+    text-transform: uppercase
+    font-size: 20px
+    margin-top: 43px
+
+.link-purple
+    color: $txt-purple
+
+.footer
+    @include bgc-black
+
+.copyright
+    @include serif
+    color: $txt-white
+    display: flex
+    padding-top: 54px
+    padding-bottom: 54px
+    @include flex
+
+.logo__footer
+    font-size: 64px
+.container
+    @include container
+
+.right-items
+    @include flex

@@ -1,0 +1,54 @@
+@mixin box
+    box-sizing: border-box
+
+@mixin container
+    margin: 0 auto
+    max-width: 1080px
+    padding: 0 15px
+    width: 100%
+
+@mixin flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+
+@mixin bgc-purple
+    background-color: #D03958
+
+@mixin bgc-white
+    background-color: #ffffff
+
+@mixin bgc-black
+    background-color: #161616
+
+@mixin bgc-beige
+    background-color: #E3D5B8
+
+@mixin logo-header
+    color: $txt-purple
+    font-size: 88px
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+
+@mixin bgs-beige
+    background-color: #E3D5B8
+    width: 100%
+
+@mixin hover-button
+    &:hover
+        background-color: #D03958
+        border-radius: 3px
+        transition-timing-function: linear
+        transition-duration: 0.5s
+        cursor: pointer
+@mixin third-title
+    font-family: 'Montserrat', serif
+    font-style: Regular
+    font-size: 50px
+    text-transform: uppercase
+    text-align: center
+
+$txt-purple: #D03958 !global
+$txt-white: #ffffff !global
+$txt-black: #161616 !global

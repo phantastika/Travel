@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Sans&display=swap')
+@import ./var
+@import ./reset
+
+@mixin roboto
+    font-family: 'Roboto', sans-serif
+    width: 400px
+
+@mixin montserrat
+    font-family: 'Montserrat', serif
+    font-style: Regular
+    font-size: 18px
+    line-height: 22px
+    font-weight: 400
+
+@mixin serif
+    font-family: 'PT Serif', serif
+    font-size: 20px
+    line-height: 26px
+
+.logo,
+.logo-footer
+    @include roboto
+
+.text
+    @include serif
+
+.menu-item,
+.name
+    @include montserrat
+
+.name
+    color: $txt-purple
