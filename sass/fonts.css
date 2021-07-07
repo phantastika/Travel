@@ -1,6 +1,79 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Sans&display=swap");
+@media screen and (max-width: 950px) {
+  .testimonial-flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form-container {
+    position: inherit;
+  }
+  .container__main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .price {
+    width: 80%;
+    margin: 10px;
+  }
+  .price .button-price {
+    padding-top: 55px;
+  }
+  .section-price {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .second__title {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .input-button.beige {
+    margin-bottom: 25px;
+  }
+  .link {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .right-items {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .cervices-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cervices-item {
+    margin-bottom: 35px;
+  }
+}
+
 body, html, h1, h2, h3, h4, h5, h6, img, p, q {
   margin: 0;
   padding: 0;

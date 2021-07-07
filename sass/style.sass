@@ -57,7 +57,8 @@
     margin:
 
 .main-left
-    max-width: 49%
+    width: 49%
+    padding-left: 29px
 
 .main__title
     font-family: 'Montserrat', serif
@@ -215,6 +216,7 @@
     background-color: #ffffff
     text-align: center
     height: 389px
+    min-width: 220px
 
 .text__price
     font-family: 'PT Serif', serif
@@ -230,14 +232,9 @@
         text-transform: uppercase
 
 .button-price
-    &__beige
-        border-radius: 4px
-        margin: 0 auto
-        padding-top: 72px
-    &__purple
-        border-radius: 4px
-        margin: 0 auto
-        padding-top: 72px
+    border-radius: 4px
+    margin: 0 auto
+    padding-top: 72px
 
 .description
     display: block
@@ -289,15 +286,14 @@
 
 .testimonial
     width: 50%
-
+.testimonial-min
+    min-width: 540px
+.testimonial-max
+    max-width: 400px
 .testimonial-flex
     display: flex
     justify-content: space-between
     flex-wrap: wrap
-
-.testimonial__left
-    display: flex
-    flex-direction: column
 
 .text__client
     width: 356px
